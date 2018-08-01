@@ -1,4 +1,4 @@
-from GENERATOR import *
+xfrom GENERATOR import *
 from datetime import datetime
 from time import sleep
 from bs4 import BeautifulSoup
@@ -10,13 +10,13 @@ import time, random, asyncio, timeit, sys, json, codecs, threading, glob, re, st
 
 print ("\n\n ---  WELCOME TO RFU SEKAWAN  ---\n")
 
-cl = RIDEN()
-#cl = RIDEN(authTokenRFU="YOUR TOKEN")
+#cl = RIDEN()
+cl = RIDEN(authTokenRFU="Ev5JMRiB0M2xrC7MFSt3.m7QAK9mmg/fv3Yt11op1GW.d7WQoheQcafTIi85Oeb22qEW2rOe4RRUsewcJLb147M=")
 cl.log("YOUR TOKEN : {}".format(str(cl.authToken)))
 channel = RIDENChannel(cl,cl.server.CHANNEL_ID['LINE_TIMELINE'])
 cl.log("CHANNEL TOKEN : " + str(channel.getChannelResult()))
 
-print ("LOGIN SUCCESS RFU")
+print ("LOGIN SUCCESS")
 
 clProfile = cl.getProfile()
 clSettings = cl.getSettings()
@@ -25,7 +25,7 @@ RIDEN = RIDENPoll(cl)
 Rfu = [cl]
 INDUK = cl.profile.mid
 RfuBot=[INDUK]
-Owner=["u805e9f30ea4da7b64a14e0f9cea0767c"]
+Owner=["uac8e3eaf1eb2a55770bf10c3b2357c33"]
 RfuSekawan = RfuBot + Rfu + Owner
 
 contact = cl.getProfile()
@@ -38,7 +38,7 @@ Squad = {
     "UnsendPesan":False,
     "SpamInvite":False,
     "Contact":False,
-    "GName":"Ardian Purnama",
+    "GName":"Rinda",
     "AutoRespon":False,
     "KickRespon":False,
     "KillOn":False,
@@ -50,7 +50,7 @@ Squad = {
     "Invite":False,
     "Copy":False,
     "autoAdd":True,
-    "PesanAdd":"Terima Kasih Sudah Add Saya",
+    "PesanAdd":"Thx for Added Rinda!\ninsta here @muh.khadaffy",
     "ContactAdd":{},
     "autoBlock":False,
     "autoJoin":True,
@@ -61,9 +61,9 @@ Squad = {
     "Timeline":False,
     "Welcome":False,
     "BackupBot":True,
-    "WcText": "Welcome My Friend",
+    "WcText": "Selamat Datang",
     "Leave":False,
-    "LvText": "See You My Friend",
+    "LvText": "Selamat Jalan.",
     "Mic":False,
     "MicDel":False,
     "Adminadd":False,
@@ -77,7 +77,7 @@ Squad = {
     "Ban":False,
     "Unban":False,
     "Admin": {
-        "u805e9f30ea4da7b64a14e0f9cea0767c":True #MID ADMIN TARO DISINI
+        "uac8e3eaf1eb2a55770bf10c3b2357c33":True #MID ADMIN TARO DISINI
     },
 }
 
